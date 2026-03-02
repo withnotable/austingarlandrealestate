@@ -409,7 +409,7 @@
         <div class="footer-brand">Austin Garland | The Cassina Group, LLC</div>
         <p>
             309 Coleman Boulevard · Mount Pleasant, SC 29464 · 843.754.8428<br>
-            Specializing in Isle of Palms, Mount Pleasant &amp; Awendaw Real Estate
+            Specializing in Isle of Palms, Sullivan's Island &amp; Mount Pleasant Real Estate
         </p>
         <div class="footer-links">
             <a href="../#about">About</a>
@@ -419,5 +419,21 @@
             <a href="https://www.thecassinagroup.com" target="_blank" rel="noopener">The Cassina Group</a>
         </div>
     </footer>
+<script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    if (navToggle && navLinks) {
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("mobile-open");
+            navToggle.classList.toggle("active");
+        });
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("mobile-open");
+                navToggle.classList.remove("active");
+            });
+        });
+    }
+    </script>
 </body>
 </html>
