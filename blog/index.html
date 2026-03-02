@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Austin Garland — Charleston Real Estate Insights</title>
+    <meta name="description" content="Local real estate insights from Austin Garland — market updates, neighborhood guides, and buying tips for Isle of Palms, Mount Pleasant, and Awendaw, SC.">
+    <meta name="author" content="Austin Garland, The Cassina Group">
+
+    <meta property="og:title" content="Charleston Real Estate Blog | Austin Garland">
+    <meta property="og:description" content="Market updates, neighborhood guides, and buying tips for Isle of Palms, Mount Pleasant, and Awendaw from a local expert.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-cream: #F5F0EB;
+            --color-sand: #E8E0D5;
+            --color-warm-gray: #9B9088;
+            --color-driftwood: #7A6E64;
+            --color-deep-earth: #3D3530;
+            --color-ink: #1A1614;
+            --color-marsh: #5C6B56;
+            --color-ocean: #4A6B7A;
+            --color-ocean-light: #6B8FA0;
+            --color-gold: #B8956A;
+            --color-gold-light: #D4B896;
+            --color-white: #FDFCFA;
+            --font-display: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Source Sans 3', 'Segoe UI', sans-serif;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-deep-earth);
+            background-color: var(--color-cream);
+            line-height: 1.7;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed; top: 0; width: 100%; z-index: 100;
+            background: rgba(253, 252, 250, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(184, 149, 106, 0.15);
+        }
+        .nav-inner {
+            max-width: 1200px; margin: 0 auto; padding: 1rem 2rem;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .nav-brand {
+            font-family: var(--font-display); font-size: 1.4rem; font-weight: 600;
+            color: var(--color-ink); text-decoration: none; letter-spacing: 0.02em;
+        }
+        .nav-brand span { color: var(--color-gold); font-weight: 400; }
+        .nav-links { display: flex; list-style: none; gap: 2.5rem; align-items: center; }
+        .nav-links a {
+            font-size: 0.82rem; font-weight: 500; color: var(--color-driftwood);
+            text-decoration: none; text-transform: uppercase; letter-spacing: 0.12em;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover { color: var(--color-ink); }
+        .nav-links a.active { color: var(--color-ink); }
+        .nav-cta {
+            background: var(--color-deep-earth) !important; color: var(--color-cream) !important;
+            padding: 0.6rem 1.4rem; border-radius: 2px;
+        }
+        .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+        .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--color-ink); margin: 5px 0; }
+
+        /* HEADER */
+        .page-header {
+            padding: 10rem 2rem 4rem;
+            background: linear-gradient(165deg, var(--color-cream) 0%, var(--color-sand) 50%, #DDD5C8 100%);
+            position: relative;
+        }
+        .page-header::after {
+            content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+            background: linear-gradient(90deg, transparent, var(--color-gold-light), transparent);
+        }
+        .header-inner { max-width: 800px; margin: 0 auto; }
+        .page-label {
+            font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.25em; color: var(--color-gold); margin-bottom: 1rem;
+            display: flex; align-items: center; gap: 0.75rem;
+        }
+        .page-label::before { content: ''; width: 2rem; height: 1px; background: var(--color-gold); }
+        .page-title {
+            font-family: var(--font-display); font-size: clamp(2.2rem, 4vw, 3.2rem);
+            font-weight: 400; line-height: 1.15; color: var(--color-ink); margin-bottom: 1rem;
+        }
+        .page-title em { font-style: italic; color: var(--color-ocean); }
+        .page-subtitle {
+            font-size: 1.1rem; font-weight: 300; color: var(--color-driftwood);
+            max-width: 600px; line-height: 1.8;
+        }
+
+        /* BLOG GRID */
+        .blog-section { padding: 5rem 2rem 8rem; }
+        .blog-grid { max-width: 900px; margin: 0 auto; }
+
+        .blog-card {
+            display: grid; grid-template-columns: 1fr; gap: 0;
+            background: var(--color-white); border-radius: 4px;
+            border: 1px solid rgba(184, 149, 106, 0.1);
+            margin-bottom: 1.5rem; overflow: hidden;
+            transition: box-shadow 0.4s ease, transform 0.3s ease;
+            text-decoration: none; color: inherit;
+        }
+        .blog-card:hover {
+            box-shadow: 0 12px 40px rgba(26, 22, 20, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .blog-card-body { padding: 2rem 2.5rem; }
+
+        .blog-card-meta {
+            display: flex; align-items: center; gap: 1rem; margin-bottom: 0.8rem;
+            flex-wrap: wrap;
+        }
+        .blog-card-category {
+            font-size: 0.7rem; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.12em; color: var(--color-ocean);
+            background: rgba(74, 107, 122, 0.08); padding: 0.25rem 0.7rem;
+            border-radius: 2px;
+        }
+        .blog-card-date {
+            font-size: 0.78rem; color: var(--color-warm-gray);
+        }
+        .blog-card-title {
+            font-family: var(--font-display); font-size: 1.6rem; font-weight: 500;
+            color: var(--color-ink); line-height: 1.3; margin-bottom: 0.8rem;
+            transition: color 0.3s ease;
+        }
+        .blog-card:hover .blog-card-title { color: var(--color-ocean); }
+
+        .blog-card-excerpt {
+            font-size: 0.95rem; color: var(--color-driftwood); line-height: 1.7;
+            margin-bottom: 1.2rem;
+        }
+        .blog-card-read {
+            font-size: 0.78rem; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.12em; color: var(--color-gold);
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+        .blog-card-read svg { width: 14px; height: 14px; transition: transform 0.3s ease; }
+        .blog-card:hover .blog-card-read svg { transform: translateX(4px); }
+
+        .blog-card-author {
+            padding: 1rem 2.5rem; border-top: 1px solid var(--color-sand);
+            display: flex; align-items: center; gap: 0.6rem;
+        }
+        .blog-card-author-name {
+            font-size: 0.78rem; font-weight: 500; color: var(--color-deep-earth);
+        }
+        .blog-card-author-title {
+            font-size: 0.72rem; color: var(--color-warm-gray);
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--color-ink); color: rgba(245, 240, 235, 0.5);
+            padding: 3rem 2rem; text-align: center;
+        }
+        .footer-brand {
+            font-family: var(--font-display); font-size: 1.2rem; font-weight: 500;
+            color: var(--color-cream); margin-bottom: 0.5rem;
+        }
+        footer p { font-size: 0.82rem; line-height: 1.8; }
+        .footer-links {
+            display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap;
+        }
+        .footer-links a {
+            font-size: 0.78rem; color: rgba(245, 240, 235, 0.4); text-decoration: none;
+            text-transform: uppercase; letter-spacing: 0.1em; transition: color 0.3s ease;
+        }
+        .footer-links a:hover { color: var(--color-gold-light); }
+
+        /* ANIMATIONS */
+        .fade-in {
+            opacity: 0; transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .nav-toggle { display: block; }
+            .page-header { padding: 8rem 1.5rem 3rem; }
+            .blog-section { padding: 3rem 1.5rem 5rem; }
+            .blog-card-body { padding: 1.5rem; }
+            .blog-card-author { padding: 1rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <a href="../" class="nav-brand">Austin Garland <span>|</span> Realtor</a>
+            <ul class="nav-links">
+                <li><a href="../#about">About</a></li>
+                <li><a href="../#neighborhoods">Neighborhoods</a></li>
+                <li><a href="./" class="active">Blog</a></li>
+                <li><a href="../#faq">FAQ</a></li>
+                <li><a href="../#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="header-inner">
+            <div class="page-label">Local Insights</div>
+            <h1 class="page-title">Charleston Real Estate <em>Blog</em></h1>
+            <p class="page-subtitle">Neighborhood guides, market updates, and buying tips from an agent who lives and works in the Lowcountry.</p>
+        </div>
+    </div>
+
+    <section class="blog-section">
+        <div class="blog-grid">
+
+            <!-- POST 1: Isle of Palms -->
+            <a href="isle-of-palms-complete-guide-buying-home.html" class="blog-card fade-in">
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="blog-card-category">Isle of Palms</span>
+                        <span class="blog-card-date">March 2026</span>
+                    </div>
+                    <h2 class="blog-card-title">The Complete Guide to Buying a Home on Isle of Palms, SC</h2>
+                    <p class="blog-card-excerpt">Everything you need to know before purchasing on IOP — from Wild Dunes vs. the front beach to flood zones, short-term rental rules, and what $1.9M actually gets you on the island right now.</p>
+                    <span class="blog-card-read">
+                        Read Guide
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </span>
+                </div>
+                <div class="blog-card-author">
+                    <div>
+                        <div class="blog-card-author-name">Austin Garland, Realtor</div>
+                        <div class="blog-card-author-title">The Cassina Group · Mount Pleasant, SC</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- POST 2: Mount Pleasant -->
+            <a href="mount-pleasant-neighborhoods-ranked-families.html" class="blog-card fade-in">
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="blog-card-category">Mount Pleasant</span>
+                        <span class="blog-card-date">March 2026</span>
+                    </div>
+                    <h2 class="blog-card-title">Best Neighborhoods in Mount Pleasant for Families in 2026</h2>
+                    <p class="blog-card-excerpt">A neighborhood-by-neighborhood breakdown of where to live in Mount Pleasant — comparing Old Village, Park West, Dunes West, Rivertowne, and North Mount Pleasant on schools, commute, lifestyle, and price.</p>
+                    <span class="blog-card-read">
+                        Read Guide
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </span>
+                </div>
+                <div class="blog-card-author">
+                    <div>
+                        <div class="blog-card-author-name">Austin Garland, Realtor</div>
+                        <div class="blog-card-author-title">The Cassina Group · Mount Pleasant, SC</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- POST 3: Awendaw -->
+            <a href="awendaw-charleston-hidden-gem-real-estate.html" class="blog-card fade-in">
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="blog-card-category">Awendaw</span>
+                        <span class="blog-card-date">March 2026</span>
+                    </div>
+                    <h2 class="blog-card-title">Why Awendaw Is Charleston's Best-Kept Secret for Homebuyers</h2>
+                    <p class="blog-card-excerpt">More land, lower prices, and direct access to the Francis Marion National Forest — here's why savvy Charleston buyers are looking north of Mount Pleasant for their next home.</p>
+                    <span class="blog-card-read">
+                        Read Guide
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </span>
+                </div>
+                <div class="blog-card-author">
+                    <div>
+                        <div class="blog-card-author-name">Austin Garland, Realtor</div>
+                        <div class="blog-card-author-title">The Cassina Group · Mount Pleasant, SC</div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-brand">Austin Garland | The Cassina Group, LLC</div>
+        <p>
+            309 Coleman Boulevard · Mount Pleasant, SC 29464 · 843.754.8428<br>
+            Specializing in Isle of Palms, Mount Pleasant &amp; Awendaw Real Estate
+        </p>
+        <div class="footer-links">
+            <a href="../#about">About</a>
+            <a href="../#neighborhoods">Neighborhoods</a>
+            <a href="./">Blog</a>
+            <a href="../#contact">Contact</a>
+            <a href="https://www.thecassinagroup.com" target="_blank" rel="noopener">The Cassina Group</a>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
