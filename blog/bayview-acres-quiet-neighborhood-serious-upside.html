@@ -3,17 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Austin Garland — Charleston Real Estate Insights</title>
-    <meta name="description" content="Local real estate insights from Austin Garland — market updates, neighborhood guides, and buying tips for Isle of Palms, Sullivan's Island, and Mount Pleasant, SC.">
+    <title>Bayview Acres: A Quiet Neighborhood with Serious Upside | Austin Garland</title>
+    <meta name="description" content="Bayview Acres in Mount Pleasant offers larger lots, established homes, and rising value driven by Patriots Point development and new construction pricing. Here's why this neighborhood deserves your attention.">
     <meta name="author" content="Austin Garland, The Cassina Group">
 
-    <meta property="og:title" content="Charleston Real Estate Blog | Austin Garland">
-    <meta property="og:description" content="Market updates, neighborhood guides, and buying tips for Isle of Palms, Sullivan's Island, and Mount Pleasant from a local expert.">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bayview Acres: A Quiet Neighborhood with Serious Upside | Austin Garland">
+    <meta property="og:description" content="Bayview Acres in Mount Pleasant is at an inflection point — Patriots Point development, $3M new construction, and larger lots make this neighborhood one to watch.">
+    <meta property="og:type" content="article">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Bayview Acres: A Quiet Neighborhood with Serious Upside",
+        "description": "Bayview Acres in Mount Pleasant offers larger lots, established homes, and rising value driven by Patriots Point development and new construction pricing.",
+        "author": {
+            "@type": "RealEstateAgent",
+            "name": "Austin Garland",
+            "jobTitle": "Realtor",
+            "worksFor": {
+                "@type": "RealEstateAgency",
+                "name": "The Cassina Group, LLC",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "309 Coleman Boulevard",
+                    "addressLocality": "Mount Pleasant",
+                    "addressRegion": "SC",
+                    "postalCode": "29464"
+                }
+            },
+            "telephone": "843-754-8428",
+            "knowsAbout": ["Isle of Palms Real Estate", "Sullivan's Island Real Estate", "Mount Pleasant Real Estate", "Bayview Acres Mount Pleasant", "Charleston SC Real Estate"]
+        },
+        "datePublished": "2026-03-19",
+        "dateModified": "2026-03-19",
+        "publisher": {
+            "@type": "RealEstateAgency",
+            "name": "The Cassina Group, LLC"
+        },
+        "about": {
+            "@type": "Place",
+            "name": "Bayview Acres",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Mount Pleasant",
+                "addressRegion": "SC"
+            }
+        }
+    }
+    </script>
 
     <style>
         :root {
@@ -86,94 +128,84 @@
             box-shadow: 0 8px 24px rgba(26, 22, 20, 0.08);
         }
 
-        /* HEADER */
-        .page-header {
+        /* ARTICLE HEADER */
+        .article-header {
             padding: 10rem 2rem 4rem;
             background: linear-gradient(165deg, var(--color-cream) 0%, var(--color-sand) 50%, #DDD5C8 100%);
             position: relative;
         }
-        .page-header::after {
+        .article-header::after {
             content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
             background: linear-gradient(90deg, transparent, var(--color-gold-light), transparent);
         }
-        .header-inner { max-width: 800px; margin: 0 auto; }
-        .page-label {
-            font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
-            letter-spacing: 0.25em; color: var(--color-gold); margin-bottom: 1rem;
-            display: flex; align-items: center; gap: 0.75rem;
+        .article-header-inner { max-width: 720px; margin: 0 auto; }
+        .back-link {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            font-size: 0.78rem; font-weight: 500; text-transform: uppercase;
+            letter-spacing: 0.12em; color: var(--color-driftwood);
+            text-decoration: none; margin-bottom: 2rem; transition: color 0.3s ease;
         }
-        .page-label::before { content: ''; width: 2rem; height: 1px; background: var(--color-gold); }
-        .page-title {
-            font-family: var(--font-display); font-size: clamp(2.2rem, 4vw, 3.2rem);
-            font-weight: 400; line-height: 1.15; color: var(--color-ink); margin-bottom: 1rem;
+        .back-link:hover { color: var(--color-ink); }
+        .back-link svg { width: 16px; height: 16px; }
+        .article-category {
+            display: inline-block; font-size: 0.7rem; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-ocean);
+            background: rgba(74, 107, 122, 0.08); padding: 0.3rem 0.8rem;
+            border-radius: 2px; margin-bottom: 1rem;
         }
-        .page-title em { font-style: italic; color: var(--color-ocean); }
-        .page-subtitle {
-            font-size: 1.1rem; font-weight: 300; color: var(--color-driftwood);
-            max-width: 600px; line-height: 1.8;
+        .article-title {
+            font-family: var(--font-display); font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 400; line-height: 1.2; color: var(--color-ink); margin-bottom: 1.5rem;
         }
+        .article-title em { font-style: italic; color: var(--color-ocean); }
+        .article-meta {
+            display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+        }
+        .article-author { font-size: 0.88rem; font-weight: 500; color: var(--color-deep-earth); }
+        .article-author-title { font-size: 0.78rem; color: var(--color-warm-gray); }
+        .article-divider {
+            width: 1px; height: 28px; background: var(--color-sand);
+        }
+        .article-date { font-size: 0.82rem; color: var(--color-warm-gray); }
 
-        /* BLOG GRID */
-        .blog-section { padding: 5rem 2rem 8rem; }
-        .blog-grid { max-width: 900px; margin: 0 auto; }
-
-        .blog-card {
-            display: grid; grid-template-columns: 1fr; gap: 0;
-            background: var(--color-white); border-radius: 4px;
-            border: 1px solid rgba(184, 149, 106, 0.1);
-            margin-bottom: 1.5rem; overflow: hidden;
-            transition: box-shadow 0.4s ease, transform 0.3s ease;
-            text-decoration: none; color: inherit;
+        /* ARTICLE BODY */
+        .article-body {
+            max-width: 720px; margin: 0 auto; padding: 4rem 2rem 6rem;
         }
-        .blog-card:hover {
-            box-shadow: 0 12px 40px rgba(26, 22, 20, 0.08);
-            transform: translateY(-2px);
+        .article-body p {
+            font-size: 1.05rem; line-height: 1.85; color: var(--color-deep-earth);
+            margin-bottom: 1.5rem;
         }
-
-        .blog-card-body { padding: 2rem 2.5rem; }
-
-        .blog-card-meta {
-            display: flex; align-items: center; gap: 1rem; margin-bottom: 0.8rem;
-            flex-wrap: wrap;
-        }
-        .blog-card-category {
-            font-size: 0.7rem; font-weight: 600; text-transform: uppercase;
-            letter-spacing: 0.12em; color: var(--color-ocean);
-            background: rgba(74, 107, 122, 0.08); padding: 0.25rem 0.7rem;
-            border-radius: 2px;
-        }
-        .blog-card-date {
-            font-size: 0.78rem; color: var(--color-warm-gray);
-        }
-        .blog-card-title {
+        .article-body h2 {
             font-family: var(--font-display); font-size: 1.6rem; font-weight: 500;
-            color: var(--color-ink); line-height: 1.3; margin-bottom: 0.8rem;
-            transition: color 0.3s ease;
+            color: var(--color-ink); margin: 3rem 0 1.2rem; line-height: 1.3;
         }
-        .blog-card:hover .blog-card-title { color: var(--color-ocean); }
+        .article-body strong { font-weight: 600; color: var(--color-ink); }
 
-        .blog-card-excerpt {
-            font-size: 0.95rem; color: var(--color-driftwood); line-height: 1.7;
-            margin-bottom: 1.2rem;
+        /* CTA */
+        .article-cta {
+            margin: 3.5rem 0; padding: 2.5rem;
+            background: var(--color-white);
+            border: 1px solid rgba(184, 149, 106, 0.2);
+            border-radius: 4px;
+            text-align: center;
         }
-        .blog-card-read {
-            font-size: 0.78rem; font-weight: 600; text-transform: uppercase;
-            letter-spacing: 0.12em; color: var(--color-gold);
-            display: flex; align-items: center; gap: 0.5rem;
+        .article-cta h3 {
+            font-family: var(--font-display); font-size: 1.4rem; font-weight: 500;
+            color: var(--color-ink); margin-bottom: 0.6rem;
         }
-        .blog-card-read svg { width: 14px; height: 14px; transition: transform 0.3s ease; }
-        .blog-card:hover .blog-card-read svg { transform: translateX(4px); }
-
-        .blog-card-author {
-            padding: 1rem 2.5rem; border-top: 1px solid var(--color-sand);
-            display: flex; align-items: center; gap: 0.6rem;
+        .article-cta p {
+            font-size: 0.95rem !important; color: var(--color-driftwood) !important;
+            margin-bottom: 1.5rem !important; max-width: 480px; margin-left: auto; margin-right: auto;
         }
-        .blog-card-author-name {
-            font-size: 0.78rem; font-weight: 500; color: var(--color-deep-earth);
+        .btn-light {
+            display: inline-block; padding: 0.8rem 2rem;
+            background: var(--color-deep-earth); color: var(--color-cream);
+            font-size: 0.82rem; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.1em; text-decoration: none; border-radius: 2px;
+            transition: background 0.3s ease;
         }
-        .blog-card-author-title {
-            font-size: 0.72rem; color: var(--color-warm-gray);
-        }
+        .btn-light:hover { background: var(--color-ink); }
 
         /* FOOTER */
         footer {
@@ -194,20 +226,11 @@
         }
         .footer-links a:hover { color: var(--color-gold-light); }
 
-        /* ANIMATIONS */
-        .fade-in {
-            opacity: 0; transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-        .fade-in.visible { opacity: 1; transform: translateY(0); }
-
         @media (max-width: 768px) {
             .nav-links { display: none; }
             .nav-toggle { display: block; }
-            .page-header { padding: 8rem 1.5rem 3rem; }
-            .blog-section { padding: 3rem 1.5rem 5rem; }
-            .blog-card-body { padding: 1.5rem; }
-            .blog-card-author { padding: 1rem 1.5rem; }
+            .article-header { padding: 8rem 1.5rem 3rem; }
+            .article-body { padding: 3rem 1.5rem 4rem; }
         }
     </style>
 </head>
@@ -219,7 +242,7 @@
             <ul class="nav-links">
                 <li><a href="../#about">About</a></li>
                 <li><a href="../#neighborhoods">Neighborhoods</a></li>
-                <li><a href="./" class="active">Blog</a></li>
+                <li><a href="./">Blog</a></li>
                 <li><a href="../#faq">FAQ</a></li>
                 <li><a href="../#contact" class="nav-cta">Contact</a></li>
             </ul>
@@ -229,136 +252,70 @@
         </div>
     </nav>
 
-    <div class="page-header">
-        <div class="header-inner">
-            <div class="page-label">Local Insights</div>
-            <h1 class="page-title">Charleston Real Estate <em>Blog</em></h1>
-            <p class="page-subtitle">Neighborhood guides, market updates, and buying tips from an agent who lives and works in the Lowcountry.</p>
+    <header class="article-header">
+        <div class="article-header-inner">
+            <a href="./" class="back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                All Posts
+            </a>
+            <span class="article-category">Mount Pleasant</span>
+            <h1 class="article-title">Bayview Acres: A Quiet Neighborhood with <em>Serious Upside</em></h1>
+            <div class="article-meta">
+                <div>
+                    <div class="article-author">Austin Garland, Realtor</div>
+                    <div class="article-author-title">The Cassina Group · Mount Pleasant, SC</div>
+                </div>
+                <span class="article-divider"></span>
+                <span class="article-date">March 19, 2026</span>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <section class="blog-section">
-        <div class="blog-grid">
+    <article class="article-body">
 
-            <!-- POST: Bayview Acres (NEW) -->
-            <a href="bayview-acres-quiet-neighborhood-serious-upside.html" class="blog-card fade-in">
-                <div class="blog-card-body">
-                    <div class="blog-card-meta">
-                        <span class="blog-card-category">Mount Pleasant</span>
-                        <span class="blog-card-date">March 2026</span>
-                    </div>
-                    <h2 class="blog-card-title">Bayview Acres: A Quiet Neighborhood with Serious Upside</h2>
-                    <p class="blog-card-excerpt">Patriots Point development, $3M new construction townhomes on Coleman, and larger lots with established character — here's why Bayview Acres is at an inflection point right now.</p>
-                    <span class="blog-card-read">
-                        Read Article
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                    </span>
-                </div>
-                <div class="blog-card-author">
-                    <div>
-                        <div class="blog-card-author-name">Austin Garland, Realtor</div>
-                        <div class="blog-card-author-title">The Cassina Group · Mount Pleasant, SC</div>
-                    </div>
-                </div>
-            </a>
+        <p>If you've been watching the residential real estate market in Charleston, you know that opportunities don't stay on the table for long. Right now, there's a pocket of Mount Pleasant that deserves serious attention: Bayview Acres. I've been working with buyers and sellers across Isle of Palms, Sullivan's Island, and Mount Pleasant for years, and I'm seeing something shift in this neighborhood that I think is worth discussing.</p>
 
-            <!-- POST: Sullivan's Island Scarcity -->
-            <a href="sullivans-island-scarcity-strength-market.html" class="blog-card fade-in">
-                <div class="blog-card-body">
-                    <div class="blog-card-meta">
-                        <span class="blog-card-category">Sullivan's Island</span>
-                        <span class="blog-card-date">March 2026</span>
-                    </div>
-                    <h2 class="blog-card-title">Sullivans Island; Scarcity, Strength, and a Market Unlike Anywhere Else</h2>
-                    <p class="blog-card-excerpt">Along the Charleston coastline, few places carry the prestige, charm, and enduring demand of Sullivan's Island.</p>
-                    <span class="blog-card-read">
-                        Read Guide
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                    </span>
-                </div>
-                <div class="blog-card-author">
-                    <div>
-                        <div class="blog-card-author-name">Austin Garland, Realtor</div>
-                        <div class="blog-card-author-title">The Cassina Group · Mount Pleasant, SC</div>
-                    </div>
-                </div>
-            </a>
+        <h2>What's Happening in Bayview Acres Right Now?</h2>
 
-            <!-- POST: Isle of Palms -->
-            <a href="isle-of-palms-complete-guide-buying-home.html" class="blog-card fade-in">
-                <div class="blog-card-body">
-                    <div class="blog-card-meta">
-                        <span class="blog-card-category">Isle of Palms</span>
-                        <span class="blog-card-date">March 2026</span>
-                    </div>
-                    <h2 class="blog-card-title">The Complete Guide to Buying a Home on Isle of Palms, SC</h2>
-                    <p class="blog-card-excerpt">Everything you need to know before purchasing on IOP — from Wild Dunes vs. the front beach to flood zones, short-term rental rules, and what $1.9M actually gets you on the island right now.</p>
-                    <span class="blog-card-read">
-                        Read Guide
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                    </span>
-                </div>
-                <div class="blog-card-author">
-                    <div>
-                        <div class="blog-card-author-name">Austin Garland, Realtor</div>
-                        <div class="blog-card-author-title">The Cassina Group · Mount Pleasant, SC</div>
-                    </div>
-                </div>
-            </a>
+        <p>If you're looking for a neighborhood that feels like a true "slam dunk" from an investment standpoint, it's hard to ignore Bayview Acres.</p>
 
-            <!-- POST: Mount Pleasant -->
-            <a href="mount-pleasant-neighborhoods-ranked-families.html" class="blog-card fade-in">
-                <div class="blog-card-body">
-                    <div class="blog-card-meta">
-                        <span class="blog-card-category">Mount Pleasant</span>
-                        <span class="blog-card-date">March 2026</span>
-                    </div>
-                    <h2 class="blog-card-title">Best Neighborhoods in Mount Pleasant for Families in 2026</h2>
-                    <p class="blog-card-excerpt">A neighborhood-by-neighborhood breakdown of where to live in Mount Pleasant — comparing Old Village, Park West, Dunes West, Rivertowne, and North Mount Pleasant on schools, commute, lifestyle, and price.</p>
-                    <span class="blog-card-read">
-                        Read Guide
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                    </span>
-                </div>
-                <div class="blog-card-author">
-                    <div>
-                        <div class="blog-card-author-name">Austin Garland, Realtor</div>
-                        <div class="blog-card-author-title">The Cassina Group · Mount Pleasant, SC</div>
-                    </div>
-                </div>
-            </a>
+        <p>Tucked in an unbeatable location in Mount Pleasant, Bayview Acres has long been appreciated for its charm, convenience, and proximity to everything that makes the Charleston area so desirable. But right now, there's a new layer to the story — one that's catching the attention of savvy buyers and investors alike.</p>
 
-            <!-- POST: Sullivan's Island Guide -->
-            <a href="sullivans-island-guide-buying-home.html" class="blog-card fade-in">
-                <div class="blog-card-body">
-                    <div class="blog-card-meta">
-                        <span class="blog-card-category">Sullivan's Island</span>
-                        <span class="blog-card-date">March 2026</span>
-                    </div>
-                    <h2 class="blog-card-title">The Insider's Guide to Buying on Sullivan's Island, SC</h2>
-                    <p class="blog-card-excerpt">Ultra-premium barrier island living with no short-term rentals, strict design review, and a $4M+ median price — here's what makes Sullivan's Island unlike any other market in Charleston.</p>
-                    <span class="blog-card-read">
-                        Read Guide
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                    </span>
-                </div>
-                <div class="blog-card-author">
-                    <div>
-                        <div class="blog-card-author-name">Austin Garland, Realtor</div>
-                        <div class="blog-card-author-title">The Cassina Group · Mount Pleasant, SC</div>
-                    </div>
-                </div>
-            </a>
+        <p>Just steps away, <strong>Patriots Point</strong> is undergoing meaningful development and revitalization. As this area continues to evolve, the ripple effect on surrounding neighborhoods is undeniable. Increased amenities, enhanced waterfront access, and overall area improvements are positioning this pocket of Mount Pleasant for long-term appreciation.</p>
 
+        <p>At the same time, we're seeing a striking shift in pricing benchmarks. New construction townhomes in the front of the neighborhood along the Coleman corridor are now approaching the <strong>$3 million mark</strong> — an important signal for what buyers are willing to pay to be in this location. When new product commands that level of pricing, it naturally elevates the value of surrounding homes and land.</p>
+
+        <p>That's where Bayview Acres becomes especially compelling.</p>
+
+        <p>Unlike some of the more tightly packed or newly developed communities, Bayview Acres offers <strong>larger lots, established homes, and a sense of character</strong> that's increasingly hard to find. It presents a unique opportunity: get into a proven neighborhood with strong fundamentals, while still benefiting from the upside of nearby luxury development and infrastructure growth.</p>
+
+        <p>In a market where location continues to drive value, Bayview Acres checks every box — proximity, lifestyle, and future potential. It's the kind of neighborhood that doesn't just hold value — it builds it.</p>
+
+        <h2>Is Now the Right Time to Buy or Sell in Bayview Acres?</h2>
+
+        <p>For sellers, the answer is straightforward: buyer interest is rising, and the inventory of homes in move-able condition isn't unlimited. If you've been thinking about listing, the momentum is building in your favor.</p>
+
+        <p>For buyers, the opportunity is here. Once the townhome inventory is completed and sold, the neighborhood values will reach new heights. If you are not intimidated by renovation or tearing down and starting over, this is an incredible opportunity.</p>
+
+        <h2>The Practical Question: What Should You Do?</h2>
+
+        <p>If you're thinking about buying a single-family home in the Charleston area and haven't explored Bayview Acres thoroughly, it deserves time on your list. Bring a real estate agent who knows the neighborhood and the broader Mount Pleasant market — not just someone selling whatever's listed.</p>
+
+        <p>If you own a home in Bayview Acres and have thought about selling, the timing is worth discussing with someone who understands this specific neighborhood and can compare it accurately to other Mount Pleasant opportunities.</p>
+
+        <p>The worst decision is usually the delayed one. Markets change, and Bayview Acres is at an interesting inflection point right now.</p>
+
+        <div class="article-cta">
+            <h3>Questions About Bayview Acres?</h3>
+            <p>Have questions about buying or selling in Bayview Acres, or want to explore other neighborhoods in Mount Pleasant, Isle of Palms, or Sullivan's Island? I'm always happy to chat through what's actually happening on the ground. Reach out — no pressure, just conversation.</p>
+            <a href="tel:8437548428" class="btn-light">Call Austin · 843.754.8428</a>
         </div>
-    </section>
+
+    </article>
 
     <footer>
         <div class="footer-brand">Austin Garland | The Cassina Group, LLC</div>
-        <p>
-            309 Coleman Boulevard · Mount Pleasant, SC 29464 · 843.754.8428<br>
-            Specializing in Isle of Palms, Sullivan's Island &amp; Mount Pleasant Real Estate
-        </p>
+        <p>309 Coleman Boulevard · Mount Pleasant, SC 29464 · 843.754.8428<br>Specializing in Isle of Palms, Sullivan's Island &amp; Mount Pleasant Real Estate</p>
         <div class="footer-links">
             <a href="../#about">About</a>
             <a href="../#neighborhoods">Neighborhoods</a>
@@ -368,12 +325,6 @@
         </div>
     </footer>
 
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-    </script>
     <script>
     const navToggle = document.querySelector(".nav-toggle");
     const navLinks = document.querySelector(".nav-links");
