@@ -1,116 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://austingarlandrealestate.com/</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
+  <url>
+    <loc>https://austingarlandrealestate.com/about.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://austingarlandrealestate.com/blog/</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://austingarlandrealestate.com/blog/isle-of-palms-amenities-guide-isle-of-palms-buyers.html</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://austingarlandrealestate.com/contact.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://austingarlandrealestate.com/blog/bayview-acres-quiet-neighborhood-serious-upside.html</loc>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <url>
-    <loc>https://austingarlandrealestate.com/blog/living-in-dunes-west-mount-pleasant-neighborhood-guide.html</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://austingarlandrealestate.com/blog/living-in-ion-mount-pleasant-new-urbanist-paradise.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://austingarlandrealestate.com/blog/forest-trail-neighborhood-isle-of-palms-guide.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://austingarlandrealestate.com/blog/old-mt-pleasant-old-village-guide.html</loc>
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://austingarlandrealestate.com/blog/isle-of-palms-amenities-guide-isle-of-palms-buyers.html</loc>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <url>
-    <loc>https://austingarlandrealestate.com/blog/wild-dunes-resort-living-isle-of-palms.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://austingarlandrealestate.com/blog/isle-of-palms-waterfront-property-scarcity.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://austingarlandrealestate.com/blog/why-location-matters-isle-of-palms.html</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://austingarlandrealestate.com/blog/when-to-sell-charleston-home.html</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://austingarlandrealestate.com/blog/bayview-acres-quiet-neighborhood-serious-upside.html</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://austingarlandrealestate.com/blog/sullivans-island-scarcity-strength-market.html</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
   <url>
     <loc>https://austingarlandrealestate.com/blog/isle-of-palms-complete-guide-buying-home.html</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-03-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://austingarlandrealestate.com/blog/isle-of-palms-waterfront-property-scarcity.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://austingarlandrealestate.com/blog/living-in-dunes-west-mount-pleasant-neighborhood-guide.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://austingarlandrealestate.com/blog/living-in-ion-mount-pleasant-new-urbanist-paradise.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://austingarlandrealestate.com/blog/living-in-the-groves-mt-pleasant-neighborhood-guide.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://austingarlandrealestate.com/blog/mount-pleasant-neighborhoods-ranked-families.html</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-03-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://austingarlandrealestate.com/blog/sullivans-island-guide-buying-home.html</loc>
-    <lastmod>2026-03-15</lastmod>
+    <loc>https://austingarlandrealestate.com/blog/old-mt-pleasant-old-village-guide.html</loc>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://austingarlandrealestate.com/blog/sulivans-island-guide-buying-home.html</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://austingarlandrealestate.com/blog/sullivans-island-scarcity-strength-market.html</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://austingarlandrealestate.com/blog/when-to-sell-charleston-home.html</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://austingarlandrealestate.com/blog/why-location-matters-isle-of-palms.html</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://austingarlandrealestate.com/blog/wild-dunes-resort-living-isle-of-palms.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

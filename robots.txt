@@ -1,10 +1,6 @@
-# robots.txt for austingarlandrealestate.com
-# Austin Garland — Isle of Palms, Sullivan's Island & Mount Pleasant REALTOR®, The Cassina Group
-
 User-agent: *
 Allow: /
 
-# Search + AI crawlers explicitly welcomed
 User-agent: Googlebot
 Allow: /
 
