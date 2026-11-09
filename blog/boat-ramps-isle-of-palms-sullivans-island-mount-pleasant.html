@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Private Dock? Here's How to Launch Your Boat from Isle of Palms and Sullivan's Island | Austin Garland</title>
+    <meta name="description" content="No private dock? Austin Garland breaks down the three real boat launch options on Isle of Palms and Sullivan's Island ">
+    <meta name="author" content="Austin Garland">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>:root {
+    --color-cream: #F5F0EB;
+    --color-sand: #E8E0D5;
+    --color-warm-gray: #9B9088;
+    --color-driftwood: #7A6E64;
+    --color-deep-earth: #3D3530;
+    --color-ink: #1A1614;
+    --color-ocean: #4A6B7A;
+    --color-gold: #B8956A;
+    --color-gold-light: #D4B896;
+    --color-white: #FDFCFA;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Source Sans 3', 'Segoe UI', sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+    font-family: var(--font-body);
+    color: var(--color-deep-earth);
+    background-color: var(--color-cream);
+    line-height: 1.7;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; height: auto; display: block; }
+
+nav {
+    position: fixed; top: 0; width: 100%; z-index: 100;
+    background: rgba(253, 252, 250, 0.92);
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(184, 149, 106, 0.15);
+    transition: all 0.4s ease;
+}
+nav.scrolled { box-shadow: 0 4px 30px rgba(26, 22, 20, 0.06); }
+.nav-inner { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+.nav-brand { font-family: var(--font-display); font-size: 1.4rem; font-weight: 600; color: var(--color-ink); letter-spacing: 0.02em; }
+.nav-brand span { color: var(--color-gold); font-weight: 400; }
+.nav-links { display: flex; list-style: none; gap: 2.5rem; align-items: center; }
+.nav-links a { font-size: 0.82rem; font-weight: 500; color: var(--color-driftwood); text-transform: uppercase; letter-spacing: 0.12em; transition: color 0.3s ease; }
+.nav-links a:hover { color: var(--color-ink); }
+.nav-cta { background: var(--color-deep-earth) !important; color: var(--color-cream) !important; padding: 0.6rem 1.4rem; border-radius: 2px; }
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+.nav-toggle span { display: block; width: 24px; height: 2px; background: var(--color-ink); margin: 5px 0; transition: 0.3s; }
+
+.article-header {
+    padding: 10rem 2rem 3rem;
+    background: linear-gradient(165deg, var(--color-cream) 0%, var(--color-sand) 50%, #DDD5C8 100%);
+    position: relative;
+}
+.article-header::after {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-gold-light), transparent);
+}
+.article-header-inner { max-width: 760px; margin: 0 auto; }
+.article-header .meta-line { font-size: 0.78rem; color: var(--color-warm-gray); margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem; }
+.article-header h1 { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 400; line-height: 1.2; color: var(--color-ink); }
+.blog-card-category { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-ocean); background: rgba(74, 107, 122, 0.08); padding: 0.25rem 0.7rem; border-radius: 2px; }
+
+.article-body { max-width: 760px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+.article-body p { margin-bottom: 1.5rem; font-size: 1.05rem; color: var(--color-deep-earth); line-height: 1.8; }
+.article-body h2 { font-family: var(--font-display); font-size: 1.8rem; font-weight: 500; color: var(--color-ink); margin: 2.5rem 0 1rem; }
+.article-body h3 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 500; color: var(--color-ink); margin: 2rem 0 0.8rem; }
+.article-body ul, .article-body ol { margin: 0 0 1.5rem 1.5rem; color: var(--color-deep-earth); }
+.article-body li { margin-bottom: 0.5rem; font-size: 1.02rem; }
+.article-body blockquote {
+    border-left: 3px solid var(--color-gold);
+    padding: 1rem 1.5rem; margin: 1.5rem 0;
+    font-family: var(--font-display); font-size: 1.15rem; font-style: italic;
+    color: var(--color-driftwood); background: var(--color-cream);
+    border-radius: 0 4px 4px 0;
+}
+.article-body a { color: var(--color-ocean); text-decoration: underline; }
+
+footer { background: var(--color-ink); color: rgba(245, 240, 235, 0.5); padding: 3rem 2rem; text-align: center; }
+.footer-brand { font-family: var(--font-display); font-size: 1.2rem; font-weight: 500; color: var(--color-cream); margin-bottom: 0.5rem; }
+footer p { font-size: 0.82rem; line-height: 1.8; }
+.footer-links { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap; }
+.footer-links a { font-size: 0.78rem; color: rgba(245, 240, 235, 0.4); text-transform: uppercase; letter-spacing: 0.1em; transition: color 0.3s ease; }
+.footer-links a:hover { color: var(--color-gold-light); }
+
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .nav-links.mobile-open {
+        display: flex; flex-direction: column;
+        position: absolute; top: 100%; left: 0; right: 0;
+        background: var(--color-white); padding: 1.5rem 2rem; gap: 1.2rem;
+        border-bottom: 1px solid var(--color-sand);
+        box-shadow: 0 8px 24px rgba(26, 22, 20, 0.08);
+    }
+    .nav-toggle { display: block; }
+    .article-header { padding: 8rem 1.5rem 2.5rem; }
+    .article-body { padding: 2rem 1.5rem 4rem; }
+}</style>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "No Private Dock? Here's How to Launch Your Boat from Isle of Palms and Sullivan's Island",
+        "author": {
+            "@type": "RealEstateAgent",
+            "name": "Austin Garland"
+        },
+        "datePublished": "2026-11-09",
+        "publisher": {
+            "@type": "RealEstateAgent",
+            "name": "Austin Garland"
+        }
+    }
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-brand">Austin Garland <span>|</span> Realtor</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="../contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="article-header">
+        <div class="article-header-inner">
+            <div class="meta-line">
+                <span class="blog-card-category">Market Insights</span>
+                <span>November 9th 2026</span>
+            </div>
+            <h1>No Private Dock? Here's How to Launch Your Boat from Isle of Palms and Sullivan's Island</h1>
+        </div>
+    </div>
+
+    <div class="article-body">
+        <p>One of the most common things I hear from buyers looking on Isle of Palms and Sullivans Island is this: "We don't need a private dock, we just want to be able to get a boat in the water easily." That's a reasonable goal, but the reality of launching from Isle of Palms or Sullivan's Island is a little more involved than most people expect. Neither barrier island lets you just pull up a trailer and slide in whenever you feel like it. Both have restrictions, and knowing them before you buy can provide real value</p>
+
+<p>Here's what you actually need to know about the three options available to boaters who don't have a private dock.</p>
+
+<h2>Sullivan's Island: Benke-Lowe Landing at Station 9</h2>
+
+<p>The boat landing on Sullivan's Island sits on the back side of the island at Station 9 and Osceola Avenue. That location matters: it puts you directly on Charleston Harbor, which means you can reach Fort Sumter or head out toward the harbor without threading through an inlet. For boaters who want to avoid inlet currents or just get out on the harbor quickly, that's genuinely useful.</p>
+
+<p>The ramp is managed by the Sullivan's Island Fire Department, which also sells the annual memberships required to use it. Memberships are available to both Sullivan's Island property owners and non-residents, so if you live in Mount Pleasant's Old Village neighborhood or anywhere else in the area, you're eligible. Passes run on a March 1 annual cycle, and you buy them in person at the Fire Department.</p>
+
+<p><strong>I wasn't able to find the current membership price listed online, so you'll need to call the Fire Department directly for that.</strong> The official department page is a good starting point: <a href="https://sullivansisland.sc.gov/departments/fire-rescue-department" target="_blank" rel="noopener">sullivansisland.sc.gov</a>.</p>
+
+<h2>Isle of Palms: Breach Inlet Boat Landing on Palm Boulevard</h2>
+
+<p>The Breach Inlet Boat Landing sits on Palm Boulevard at the Isle of Palms side of the Breach Inlet bridge. Getting access requires a bit more legwork than a simple fee payment. You'll need to bring three things to Isle of Palms City Hall at 1207 Palm Blvd: proof of $300,000 in liability insurance, a signed resident or non-resident agreement, and the annual fee. Full-time residents pay $100; everyone else pays $200. Passes cover January through December and must be renewed every year. There are no partial-year passes.</p>
+
+<p>One thing I want to flag clearly for anyone considering this ramp: <strong>Breach Inlet has extremely strong tidal currents.</strong> Swimming there is illegal, and the currents pose a real risk for small boats, particularly when the tide is turning. This isn't a beginner-friendly launch site, and experienced local boaters treat it with respect. If you're newer to boating or running a smaller vessel, that's worth factoring into your plans.</p>
+
+<p>More details for residents and non-residents are available through the <a href="https://www.isleofpalms.gov/breach-inlet-boat-landing" target="_blank" rel="noopener">Isle of Palms official page</a>.</p>
+
+<h2>Isle of Palms Marina: The One Pay-Per-Launch Option</h2>
+
+<p>If you don't want to commit to an annual pass, the Isle of Palms Marina at the end of 41st Avenue is your only pay-per-launch option on either island. It's a double-wide ramp onto the Intracoastal Waterway, which opens up a lot of boating territory without dealing with an inlet at all. The marina also has fuel, a pump-out station, a ship store, so it functions as a full-service facility rather than just a ramp.</p>
+
+<p> Visit the Town of Isle of Palms website for the most current information on rates and availability for both residents and non-residents.</p>
+
+<h2>What Does This Mean When You're Shopping for a Home?</h2>
+
+<p>If water access is a priority for you, it changes how you should think about a home's value. A property with a private dock or deeded boat slip access is a genuinely different product from one that relies on a public ramp. That difference shows up in price, and it's worth understanding exactly what you're paying for.</p>
+
+<p>When I work with buyers on Isle of Palms and Sullivans Island who want to boat regularly, I always want to make sure they've thought through the logistics before we're under contract.</p>
+
+<p>Sellers with water access worth noting, whether that's a dock, a neighborhood boat landing, or close proximity to one of these ramps, should be making sure that's clearly communicated in their listing. If you price to current comparable sales and present the home's water access story accurately, listings in this category tend to attract buyers who understand what they're looking for.</p>
+
+<p>If you have questions about water access, what it's worth in today's Isle of Palms and Sullivans Island market, or which neighborhoods give you the best combination of price and boating convenience, I'm happy to talk through it.</p>
+    </div>
+
+    <footer>
+        <div class="footer-brand">Austin Garland | The Cassina Group</div>
+        <p>Equal Housing Opportunity</p>
+        <p style="margin-top:4px;font-style:italic;font-size:0.8rem;">Content on this site is created with AI assistance and reviewed by Austin Garland.</p>
+        <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="index.html">Blog</a>
+            <a href="../contact.html">Contact</a>
+            <a href="https://withnotable.ai">Powered by withNotable</a>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll-triggered fade-in
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Nav scroll state
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Hamburger menu
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('mobile-open');
+                navToggle.classList.toggle('active');
+            });
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('mobile-open');
+                    navToggle.classList.remove('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
